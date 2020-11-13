@@ -211,7 +211,10 @@ img{
   display: block;
   width: 100%;
 }
-.product-list {margin-top: 15px;}
+.product-list {
+  margin-top: 15px;
+  width: 100%;
+}
 .product-list h4 {
   font-weight: 700;
   color: #39404B;
@@ -271,4 +274,15 @@ img{
 
 p{
     margin: 0;
+}
+
+.col-md-6 h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 500px) {
+  .second-slider {
+    display: none;
+  }
 }
