@@ -51,13 +51,13 @@ var x = setInterval(function() {
     hours = "0" + hours;
   }
     // Выводить резултать в элемент с id="demo"
-    document.getElementById("demo").innerHTML = /*days + "d " +*/ hours + " : "
+    document.getElementById("super-time").innerHTML = /*days + "d " +*/ hours + " : "
     + minutes + " : " + seconds;
     
     // Если день до которого должен был считать закончилось выводить timeout
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("super-time").innerHTML = "EXPIRED";
     }
 }, 1000);
 
