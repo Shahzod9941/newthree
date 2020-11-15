@@ -30,6 +30,7 @@
     </div> <!--sidenav-->
 
 <br><br><br><br>
+
 <div class="container-fluid">
 <div class="row">
     <div class="col-md-6">
@@ -183,15 +184,90 @@
 
 
 
+<!-- 
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top:0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// дата до которого мы считаем
+var countDownDate = new Date("Nov 15, 2020 20:00:00").getTime();
+
+// обновить счётчик каждый 1 секунд
+var x = setInterval(function() {
+
+    // Возьмём сегоднечную дату
+    var now = new Date().getTime();
+    
+    //найдёт дистансию с сегоднечного числа до считаемого
+    var distance = countDownDate - now;
+    
+    // Калькулятор времени для день часы, минута, и секунда
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Выводить резултать в элемент с id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // Если день до которого должен был считать закончилось выводить timeout
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html> -->
+
+
+<div class="col-md-5">
+    <h1> Супер скидка</h1>
+    <div class="card" id="super">
+        <div class="row">
+            <div class="card-img-row col-md-6">
+        <div class="card-img">
+            <img src="https://gde.ru/images/img_ru/474x354/50/43/5043f0f0791b76d75b5369abca0ab702.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="card-list-row col-md-6">
+        <div class="card-list">
+            <h3>Коляска</h3>
+            <p>Магазин: <b>Султони Кабир</b></p>
+            <div class="narx"><s class="price-number">700с</s> <b>629с</b></div>
+            <div class="address"><span>г. Душанбе </span><span>ул. Н.Карабоев</span></div>                    
+            <div class="seller-conn"><a href="tel:+992933099941">Связь с продовцом</a></div>
+            <br>
+            <br>
+            <br>
+            <p>До окончание скидки осталось: </p>
+            <h1 id="demo"></h1>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
 
 
 
-
-
-
-
-<!--Slider's second block-->
-<div class="col-md-4 second-slider">
+<!-- Slider's second block Работающий, временно закоментирован для эксперимента обратный счётчик -->
+<!-- <div class="col-md-4 second-slider">
         
     <h1>Горячие скидки</h1>
         <div class="slider ">
@@ -336,11 +412,11 @@
             </div>
 
           
-    </div> <!--slider-->
-</div>
+    </div> 
+</div> -->
 
 
-</div> <!--slider-->
+</div> <!--row-->
 </div>
 
 
