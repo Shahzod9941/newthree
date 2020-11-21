@@ -24,7 +24,7 @@ function closeNav() {
 
 
 // дата до которого мы считаем
-var countDownDate = new Date("Dec 15, 2020 20:00:00").getTime();
+var countDownDate = new Date("Nov 28, 2020 22:00:00").getTime();
 
 // обновить счётчик каждый 1 секунд
 var x = setInterval(function() {
@@ -50,8 +50,9 @@ var x = setInterval(function() {
   if (hours < 10) {
     hours = "0" + hours;
   }
+
     // Выводить резултать в элемент с id="demo"
-    document.getElementById("super-time").innerHTML = /*days + "d " +*/ hours + " : "
+    document.getElementById("super-time").innerHTML = days + " : " + hours + " : "
     + minutes + " : " + seconds;
     
     // Если день до которого должен был считать закончилось выводить timeout
