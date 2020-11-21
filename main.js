@@ -24,7 +24,7 @@ function closeNav() {
 
 
 // дата до которого мы считаем
-var countDownDate = new Date("Nov 15, 2020 20:00:00").getTime();
+var countDownDate = new Date("Dec 15, 2020 20:00:00").getTime();
 
 // обновить счётчик каждый 1 секунд
 var x = setInterval(function() {
